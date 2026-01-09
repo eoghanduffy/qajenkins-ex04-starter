@@ -15,7 +15,8 @@ pipeline {
     }
     stage("Scan Image") {
       steps {
-        grypeScan scanDest: "docker:${regisrty}:S(BUILD_NUMBER}", repName: 'scanResult.txt', autoInstall:true
+        grypeScan scanDest: "docker:${regisrty}:S(BUILD_NUMBER}", repName:
+    'scanResult.txt', autoInstall:true
       }
     }
   }
